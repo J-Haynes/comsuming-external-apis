@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 
 import { getWelcome } from '../apiClient'
+import KanyeQuote from './KanyeQuote'
+import Weather from './Weather'
 
 function App() {
   const [welcomeStatement, setWelcomeStatement] = useState('')
@@ -15,7 +17,13 @@ function App() {
       })
   })
 
-  return <h1>{welcomeStatement}</h1>
+  return (
+    <>
+      <h1>{welcomeStatement}</h1>
+      <KanyeQuote />
+      <Weather />
+    </>
+  )
 }
 
 export default App
