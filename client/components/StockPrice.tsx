@@ -8,8 +8,8 @@ function StockPrice() {
   useEffect(() => {
     getPrice()
       .then((price) => {
-        setPrice(price)
-        console.log(price.c)
+        setPrice(price.c)
+        console.log(price)
       })
       .catch((err) => console.log(err.message))
   }, [])
@@ -17,7 +17,7 @@ function StockPrice() {
   console.log(price)
   return (
     <div>
-      <p>Apple Price is: </p>
+      <p>AAPL:NASDAQ Price is: ${price} </p>
     </div>
   )
 }
