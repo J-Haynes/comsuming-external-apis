@@ -1,0 +1,15 @@
+body {
+  background-color: grey;
+  text-align: center;
+}
+
+.map-div {
+  width: 720px;
+  height: 362px;
+  margin: auto
+}
+
+#circle {
+  position: relative;
+  
+}

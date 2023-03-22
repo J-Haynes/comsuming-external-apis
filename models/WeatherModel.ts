@@ -13,6 +13,8 @@ export interface Condition {
 export interface Location {
   name: string
   country: string
+  lat: number
+  long: number
 }
 
 export interface Condition {
